@@ -9,16 +9,17 @@
  
  To use this library in an app which needs to support both landscape and portrait orientations.
  
- ## Installation
- 
- Add repository url and dependency in application module gradle file:
- 
- allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
+## Installation
+
+Add repository url and dependency in application module gradle file:
+  
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
 	}
-}
+
 ### Gradle
 [![](https://jitpack.io/v/softpal/SoftpalCameraOrientationUtils.svg)](https://jitpack.io/#softpal/SoftpalCameraOrientationUtils)
 ```javascript
