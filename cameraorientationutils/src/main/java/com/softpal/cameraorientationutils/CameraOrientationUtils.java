@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.os.Build;
 import android.util.Log;
 
 import com.softpal.fileutils.FileUtils;
@@ -15,10 +16,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
+import androidx.annotation.RequiresApi;
+
 public class CameraOrientationUtils
 {
 	private static final String TAG = CameraOrientationUtils.class.getSimpleName();
 	
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
 	public static void correctOrientation(Context mContext,Uri uri)
 	{
 		long start = Calendar.getInstance().getTimeInMillis();
